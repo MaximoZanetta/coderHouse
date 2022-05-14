@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=PT+Serif&family=Roboto:ital,wght@0,100;1,400&family=Water+Brush&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #DDFFF7;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #0D0106;
+}
+
+.header {
+    background-color: #0D0106;
+}
+
+.header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header .logo span {
+    color: #FFE900;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #DDFFF7;
+}
+
+header a:hover {
+    opacity: 0.7;
+}
+
+header .boton {
+    display: none;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+#banner button {
+    margin-bottom: 10px;
+    color: black;
+    border: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #FFE900;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#banner button:hover {
+    width: 150px;
+    height: 60px;
+    opacity: .7;
+}
+
+#productos {
+     display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#productos .container img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 7px;
+    border: 5px white solid;
+}
+
+#productos .container {
+    margin: 50px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;  */
+}
+
+#productos .container .botonComprar {
+    color: black;
+    margin-bottom: 40px;
+    border: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FFE900;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    /* text-align: center;
+    margin-left: 0;
+    margin-right: 0; */
+}
+
+#productos .container .botonComprar {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#servicios {
+    background-color: #0D0106;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ #servicios .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+} 
+
+#servicios .container i {
+    color: white;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 7px;
+}
+
+#servicios .container h4 {
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#servicios .container p {
+    color: white;
+    margin-bottom: 60px;
+}
+
+#servicios span {
+    text-align: center;
+}
+
+.servicioUno , .servicioDos , .servicioTres {
+    margin: 0 40px;
+}
+
+#bannerDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/4505016.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+#bannerDos h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+
+#footer .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#footer h2 {
+    color: #DDFFF7;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FFE900;
+}
+
+#footer p {
+    font-size: 15px;
+    color: white;
+}
+
+#footer .box a {
+    width: 45px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+}
+
+#footer .box span {
+    display: inline-block;
+}
+
+#footer .box a:hover {
+    color: #FFE900;
+}
+
+#footer {
+    background-color: #DDFFF7;
+}
+
+#footer h2 {
+    color: #0D0106;
+    font-weight: bold;
+}
+
+#footer p {
+    color: #0D0106;
+}
+
+.politicasDevolucion h2 {
+    color: #FFE900;
+}
+
+.politicasDevolucion p {
+    color: white;
+    margin: 20px 0;
+}
+
+.politicasDevolucion p:last-child {
+    margin-bottom: 60px;
+}
+
+.wsp img {
+    position: fixed;
+    width: 40px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.wsp img:hover {
+    opacity: .7;
+}
+
+@media screen and (min-width:600px) {
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    header .boton {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        border: 2px white solid;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+
+    #productos .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #productos .container .botonComprar {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #footer {
+        background-color: #DDFFF7;
+    }
+
+    #footer h2 {
+        color: #0D0106;
+        font-weight: bold;
+    }
+
+    #footer p {
+        color: #0D0106;
+    }
+}
+
+@media screen and (min-width:800px){
+    .header .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 120px;
+    }
+
+    .header .container nav {
+        margin-top: 19px;
+    }
+
+    #banner {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    #footer {
+        background-color: #DDFFF7;
+    }
+
+    #footer h2 {
+        color: #0D0106;
+        font-weight: bold;
+    }
+
+    #footer p {
+        color: #0D0106;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #productos .container {
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        height: 700px;
+    }
+
+    #productos .container .botonComprar {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #servicios .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #footer {
+        width: 100%;
+        background-color: #DDFFF7;
+    }
+
+    #footer h2, p {
+        color: #0D0106;
+        font-weight: bold;
+    }
+
+    #footer p {
+        color: #0D0106;
+    }
+
+    #footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 45px 0px;
+    }
+}
+
+@media screen and (min-width:1100px){
+    #productos .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 700px;
+        gap: 50px;
+    }
+
+    #banner h1 {
+        display: none;
+    }
+
+    #banner button {
+        margin-top: 400px;
+    }
+}
