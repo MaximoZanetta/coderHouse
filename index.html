@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Street Club</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/6083ba5cb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
 
-            <a class="logo" href="">Street <span>Club</span></a>
+            <a class="animate__animated animate__heartBeat logo" href="">Street <span>Club</span></a>
             <nav>
                 <ul>
-                    <a href="pages/Inicio.html">Inicio</a>
-                    <a href="pages/productos.html">Producto</a>
-                    <a href="pages/contacto.html">Contacto</a>
-                    <a href="pages/politicas.html">Politicas De Devolucion</a>
+                    <a class="sub" href="pages/Inicio.html">Inicio</a>
+                    <a class="sub" href="pages/productos.html">Producto</a>
+                    <a class="sub" href="pages/contacto.html">Contacto</a>
+                    <a class="sub" href="pages/politicas.html">Politicas De Devolucion</a>
                 </ul>
             </nav>
             <a  class="boton" href="">Iniciar Sesion</a>
@@ -30,7 +38,7 @@
         <button>ver productos</button>
     </section>
 
-    <section id="productos">
+    <section data-aos="fade-left" id="productos">
         <div class="container">
             <div class="productoUno">
                 <img src="img/WhatsApp Image 2022-05-10 at 11.13.39 AM.jpeg" alt="">
@@ -87,7 +95,7 @@
     </section>
 
     <section id="bannerDos">
-        <h1>VESTITE CON LOS MEJORES</h1>
+        <h1 class="animate__animated animate__bounce">VESTITE CON LOS MEJORES</h1>
     </section>
 
     <footer id="footer">
@@ -114,5 +122,12 @@
     <div class="wsp">
        <a href="#" target="_blank"></a> <img src="img/logoWsp.png" alt="">
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 </html>

@@ -52,10 +52,6 @@ header a {
     color: #DDFFF7;
 }
 
-header a:hover {
-    opacity: 0.7;
-}
-
 header .boton {
     display: none;
 }
@@ -78,6 +74,10 @@ header .boton {
     background-position: center center;
 }
 
+#banner:hover {
+    filter: grayscale(40%);
+}
+
 #banner h1 {
     color: white;
     font-size: 50px;
@@ -88,13 +88,17 @@ header .boton {
 
 #banner button {
     margin-bottom: 10px;
-    color: black;
+    color: white;
     border: 10px;
     border-radius: 10px;
     padding: 15px;
     background-color: #FFE900;
     text-transform: uppercase;
     font-weight: bold;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #banner button:hover {
@@ -137,6 +141,11 @@ header .boton {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    background: #fffc00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     /* text-align: center;
     margin-left: 0;
     margin-right: 0; */
@@ -227,7 +236,8 @@ header .boton {
     color: #DDFFF7;
     text-align: center;
     margin-bottom: 10px;
-    color: #FFE900;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #footer p {
@@ -288,6 +298,26 @@ header .boton {
 
 .wsp img:hover {
     opacity: .7;
+}
+
+.sub {
+    background-image: linear-gradient(currentColor,currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+}
+
+.sub:hover , sub:focus {
+    background-size: 100% 2px;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .8s;
+}
+
+.boton:active {
+    transform: translateY(3px);
 }
 
 @media screen and (min-width:600px) {
