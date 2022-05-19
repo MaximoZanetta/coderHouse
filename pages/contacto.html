@@ -5,30 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Street Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/6083ba5cb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-
-            <a class="logo" href="">Street <span>Club</span></a>
-            <nav>
-                <ul>
-                    <a href="Inicio.html">Inicio</a>
-                    <a href="productos.html">Producto</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="politicas.html">Politicas De Devolucion</a>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class= "tamLogo rounded-circle rounded-5" src="../img/STREETCLUB.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fuentes" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fuentes" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fuentes" href="../pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu menuVertical" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item fuentesDos" href="buzos.html">Buzos</a></li>
+                  <li><a class="dropdown-item fuentesDos" href="remeras.html">Remeras</a></li>
+                  <li><a class="dropdown-item fuentesDos" href="pantalones.html">Pantalones</a></li>
+                  <li><a class="dropdown-item fuentesDos" href="zapatillas.html">Zapatillas</a></li>
+                  <li><a class="dropdown-item fuentesDos" href="accesorios.html">Accesorios</a></li>
                 </ul>
-            </nav>
-            <a  class="boton" href="">Iniciar Sesion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fuentes" href="../pages/politicas.html">Politicas De Devolucion</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </header>
+      </nav>
+
+      <h2 class="iniciarSesion">Iniciar Sesion</h2>
+
+
+      <form class="contenedor">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control contraseña" id="exampleInputPassword1">
+        </div>
+        <div class="mb-1">
+            <a href="#">¿No tienes una cuenta? Crear Cuenta</a>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn botonEnviar">Enviar</button>
+      </form>
 
     
 
     <section id="servicios">
-        <div class="container">
+        <div class="caja">
             <div class="servicioUno">
                 <span>
                     <i class="fa-solid fa-truck"></i>
@@ -55,7 +100,7 @@
     </section>
 
     <footer id="footer">
-        <div class="container">
+        <div class="caja">
             <div class="box">
                 <h2>Sobre Nosotros</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit doloribus, dignissimos neque adipisci maxime magni hic facere corrupti aspernatur?</p>
@@ -74,5 +119,8 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
