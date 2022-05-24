@@ -473,11 +473,6 @@ background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, F
 
 /* COLOCANDO BOOTSTRAP EN MI PAGINA */
 
-.navbar-toggler-icon {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
 
 .tamLogo {
     width: 100px;
