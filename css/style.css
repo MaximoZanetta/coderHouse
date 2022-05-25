@@ -311,12 +311,12 @@ background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, F
     background-size: 100% 2px;
 }
 
-.boton:hover {
+.botonComprar:hover {
     transform: translateY(-3px);
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .8s;
 }
 
-.boton:active {
+.botonComprar:active {
     transform: translateY(3px);
 }
 
