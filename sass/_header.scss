@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #DDFFF7;
+}
+
+$tam-fuente: 1.3rem;
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #0D0106;
+}
+
+
+.tamLogo {
+    width: 100px;
+}
+
+.fuentes {
+    font-size: $tam-fuente;
+    font-weight: bold;
+    text-align: center;
+    color: #DDFFF7;
+
+   &:hover {
+    color: #DDFFF7;
+    opacity: .6;
+    }
+}
+
+.menuVertical {
+    background-color: #0D0106;
+
+    .fuentesDos {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #DDFFF7;
+    }
+}
