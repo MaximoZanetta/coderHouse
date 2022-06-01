@@ -1,24 +1,28 @@
+
+/*secciones*/
+
+$tam:(width:250px, height:250px);
+
 #productos {
     display: flex;
    flex-direction: column;
    align-items: center; 
    .caja img {
-    width: 250px;
-    height: 250px;
+    width: map-get($tam,width);
+    height: map-get($tam,height);
     margin-bottom: 7px;
     border: 5px white solid;
     }
     .caja {
         margin: 50px;
       .botonComprar {
-            color: black;
+            @include botonDeCompra;
             margin-bottom: 40px;
             border: 5px;
             border-radius: 5px;
             padding: 10px;
             background-color: #FFE900;
             text-transform: uppercase;
-            font-weight: bold;
             display: flex;
             flex-direction: column; 
             align-items: center;
@@ -38,10 +42,7 @@
     flex-direction: column;
     align-items: center;
     .caja {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex(flex,row,center,center);
         margin: 20px;
         i {
             color: white;

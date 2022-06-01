@@ -1,3 +1,6 @@
+
+/*body with header*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +14,7 @@ $tam-fuente: 1.3rem;
 body {
     font-family: 'Lato', sans-serif;
     background-color: #0D0106;
+    
 }
 
 
@@ -38,4 +42,8 @@ body {
         font-weight: 500;
         color: #DDFFF7;
     }
+}
+
+.button-style {
+    color: white;
 }

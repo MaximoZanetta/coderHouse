@@ -1,3 +1,5 @@
+/*footer*/
+
 #footer {
     background-color: #DDFFF7;
     .box {
@@ -15,11 +17,12 @@
             height: 25px;
             line-height: 25px;
             color: white;
+            text-decoration: none;
             margin-right: 10px;
             background-color: #0d2033;
             text-align: center;
-             &:hover {
-                color: #FFE900;
+            &:hover {
+                transform: scale(1.05);
              }
         }
     }
