@@ -21,6 +21,7 @@
     <script src="https://kit.fontawesome.com/6083ba5cb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- HEADER CON NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
 
@@ -61,8 +62,11 @@
           </div>
         </div>
       </nav>
+  <!-- FINALIZACION DE HEADER CON NAVBAR -->
 
-      <div id="carouselExampleControls" class="carousel slide tamañoImagenes" data-bs-ride="carousel">
+
+  <!-- BANNER PRINCIPAL -->
+      <!-- <div id="carouselExampleControls" class="carousel slide tamañoImagenes" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/probarBanner1.jfif" class="d-block w-100" alt="...">
@@ -79,49 +83,79 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> -->
 
-    <!-- <section id="banner">
+    <section id="banner">
         <h1>ROPA CON ESTILO!</h1>
         <button>ver productos</button>
-    </section> -->
-
-    <section data-aos="fade-left" id="productos">
-      <h2 class="mt-5">PRODUCTOS DESTACADOS</h2>
-        <div class="caja">
-            <div class="productoUno">
-                <img src="img/productoDestacadoBuzo.jfif" alt="">
-                <button class="botonComprar">Comprar</button>
-            </div>
-            <div class="productoDos">
-                <img src="img/WhatsApp Image 2022-05-10 at 11.13.40 AM (1).jpeg" alt="">
-                <button class="botonComprar">Comprar</button>
-            </div>
-            <div class="productoTres">
-                <img src="img/WhatsApp Image 2022-05-10 at 11.13.40 AM.jpeg" alt="">
-                <button class="botonComprar">Comprar</button>
-            </div>
-            <div class="productoCuatro">
-                <img src="img/WhatsApp Image 2022-05-10 at 11.13.41 AM (1).jpeg" alt="">
-                <button class="botonComprar">Comprar</button>
-            </div>
-            <div class="productoCinco">
-                <img src="img/WhatsApp Image 2022-05-10 at 11.13.41 AM.jpeg" alt="">
-                <button class="botonComprar">Comprar</button>
-            </div>
-            <div class="productoSeis">
-                <img src="img/WhatsApp Image 2022-05-10 at 11.13.42 AM.jpeg" alt="">
-                <button class="botonComprar">Comprar</button>
-            </div>
-        </div>
     </section>
 
-    <section id="servicios">
-        <div class="caja">
-            <div class="servicioUno">
-                <span>
-                    <i class="fa-solid fa-truck"></i>
-                </span>
+<section id="ads">
+</section>
+
+
+    <!-- SECCION PRODUCTOS DESTACADOS -->
+    <section data-aos="fade-left" id="productos">
+      <div class="row g-0">
+      <h2 class="text-center mt-5">PRODUCTOS DESTACADOS</h2>
+      <div class="collection-list mt-4 row gx-0 gy-3">
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="collection-img position-relative overflow-hidden">
+            <img src="img/productoDestacadoBuzo.jfif" class="w-100" alt="">
+            <span class="position-absolute bg-danger text-white d-flex align-items-center justify-content-center">Sin stock</span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize my-1">Buzo jordan red</p>
+            <span class="fw-bold">$ 80</span>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="collection-img position-relative overflow-hidden">
+            <img src="img/productoDestacadoHat.jfif" class="w-100" alt="">
+        </div>
+        <div class="text-center">
+          <p class="text-capitalize my-1">Gorro Nike</p>
+          <span class="fw-bold">$ 40</span>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="collection-img position-relative overflow-hidden">
+          <img src="img/productoDestacadoPant.jfif" class="w-100" alt="">
+        </div>
+        <div class="text-center">
+          <p class="text-capitalize my-1">Pantalon azul NBA</p>
+          <span class="fw-bold">$ 75</span>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="collection-img position-relative overflow-hidden">
+          <img src="img/productoDestacadoShirt.jfif" class="w-100" alt="">
+          <span class="position-absolute bg-danger text-white d-flex align-items-center justify-content-center">Sin stock</span>
+        </div>
+        <div class="text-center">
+          <p class="text-capitalize my-1">Remera Jordan negra</p>
+          <span class="fw-bold">$ 30</span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<div class="verTodo d-grid gap-2">
+  <a href="" class="btn botonVer"><i class="fa-solid fa-cart-shopping"></i><span class="text-center fw-bold">VER TODOS LOS PRODUCTOS</span></a>
+</div>
+    
+
+  <section id="servicios">
+    <div class="caja">
+      <div class="servicioUno">
+        <span>
+          <i class="fa-solid fa-truck"></i>
+        </span>
                 <h4>ENVIAMOS TU COMPRA</h4>
                 <P>Entregas a todo el pais</P>
             </div>
