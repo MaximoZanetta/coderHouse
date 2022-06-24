@@ -207,6 +207,8 @@ body {
     border: 2px white solid;
     border-radius: 4px;
     margin-bottom: 5px; }
+  body {
+    overflow-x: hidden; }
   #productos .caja {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -242,6 +244,8 @@ body {
     height: 120px; }
     .header .caja nav {
       margin-top: 19px; }
+  body {
+    overflow-x: hidden; }
   #banner {
     height: 100vh;
     object-fit: cover; }
@@ -276,6 +280,8 @@ body {
       text-align: center;
       margin-left: auto;
       margin-right: auto; }
+  body {
+    overflow-x: hidden; }
   #servicios .caja {
     display: flex;
     flex-direction: row;
@@ -316,6 +322,8 @@ body {
       display: none; }
       #banner h1 button {
         margin-top: 400px; }
+  body {
+    overflow-x: hidden; }
   .tamañoImagenes img {
     height: 90vh;
     width: 100vh;
