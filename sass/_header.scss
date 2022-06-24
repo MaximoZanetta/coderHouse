@@ -14,7 +14,7 @@ $tam-fuente: 1.3rem;
 body {
     font-family: 'Lato', sans-serif;
     background-color: #0D0106;
-    
+    overflow-x: hidden;
 }
 
 
@@ -35,12 +35,18 @@ body {
 }
 
 .menuVertical {
-    background-color: #0D0106;
+    // background-color: black;
 
     .fuentesDos {
         font-size: 1rem;
         font-weight: 500;
         color: #DDFFF7;
+
+        &:hover {
+            text-decoration: underline;
+            color: white;
+            background-color: black;
+        }
     }
 }
 

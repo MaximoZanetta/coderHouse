@@ -1,0 +1,189 @@
+@media screen and (min-width:600px) {
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    header .boton {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        border: 2px white solid;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+
+    #productos .caja {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+
+        .botonComprar {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .collection-img img{
+        width: 500px;
+    }
+
+
+    #footer {
+        background-color: #DDFFF7;
+
+        h2 {
+            color: #0D0106;
+            font-weight: bold;
+        }
+        p {
+            color: #0D0106;
+        }
+    }
+    #ads {
+        background-image: url(../img/banner-bitcoin.jpg);
+        position: relative;
+        background-size: cover;
+        height: 35vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:800px){
+    .header .caja {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 120px;
+
+        nav {
+            margin-top: 19px;
+        }
+    }
+
+
+    #banner {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    #footer {
+        background-color: #DDFFF7;
+
+        h2 {
+            color: #0D0106;
+            font-weight: bold;
+        }
+
+        p {
+            color: #0D0106;
+        }
+    }
+    #ads {
+        background-image: url(../img/banner-bitcoin.jpg);
+        position: relative;
+        background-size: cover;
+        height: 35vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #productos .caja {
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        height: 700px;
+
+        .botonComprar {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    #servicios .caja {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #footer {
+        width: 100%;
+        background-color: #DDFFF7;
+
+        h2, p {
+            color: #0D0106;
+            font-weight: bold;
+        }
+
+        .caja {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            padding: 45px 0px;
+        }
+    }
+    #ads {
+        background-image: url(../img/banner-bitcoin.jpg);
+        position: relative;
+        background-size: cover;
+        height: 35vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:1100px){
+    #productos .caja {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 700px;
+        gap: 50px;
+    }
+    #banner {
+        width: 100%;
+        
+        h1 {
+            display: none;
+            
+            button {
+                margin-top: 400px;
+            }
+        }
+    }
+
+    .tamañoImagenes img {
+        height:90vh;
+        width: 100vh;
+        object-fit: contain;
+    }
+    #ads {
+        background-image: url(../img/banner-bitcoin.jpg);
+        position: relative;
+        background-size: cover;
+        height: 35vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
+    }
+}

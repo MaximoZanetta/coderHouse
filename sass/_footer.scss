@@ -1,6 +1,8 @@
 /*footer*/
 
 #footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #DDFFF7;
     .box {
         display: flex;
@@ -11,6 +13,7 @@
         margin: 10px;
         span {
             display: inline-block;
+            margin-bottom: 10px;
         }
         a {
             width: 45px;

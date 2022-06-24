@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .button {
   display: flex;
   flex-direction: row;
@@ -6,12 +7,14 @@
 
 /*secciones*/
 #banner {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 90vh;
+  overflow: hidden;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,46 +27,19 @@
     font-weight: bold;
     font-family: sans-serif;
     margin-bottom: 40px; }
-  #banner button {
-    margin-bottom: 10px;
-    color: white;
-    border: 10px;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #FFE900;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: #0f0c29;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-    #banner button:hover {
-      width: 150px;
-      height: 60px;
-      opacity: .7; }
 
-#ads {
-  background-image: url(../img/banner-bitcoin.jpg);
-  position: relative;
-  background-size: cover;
-  height: 35vh;
-  background-repeat: no-repeat;
-  width: 100%;
-  overflow: hidden; }
-
-.collection-img span {
-  top: 20px;
-  right: 20px;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  font-size: 10px; }
-
-.collection-img img:hover {
-  cursor: pointer;
-  transform: scale(1.1); }
+.collection-img {
+  margin: 15px; }
+  .collection-img span {
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 10px; }
+  .collection-img img:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
 
 .botonVer {
   border: 2px solid white;
@@ -119,6 +95,23 @@
     margin-bottom: 20px;
     font-family: sans-serif; }
 
+.iniciarSesion {
+  color: #DDFFF7;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px;
+  padding-left: 48px; }
+
+.contenedor {
+  max-width: 800px;
+  margin: 40px 60px; }
+  .contenedor .email, .contenedor .contraseña {
+    width: 60%; }
+  .contenedor .botonEnviar {
+    color: #0D0106;
+    font-weight: bold;
+    background-color: #FFE900; }
+
 /*body with header*/
 * {
   margin: 0;
@@ -129,7 +122,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #0D0106; }
+  background-color: #0D0106;
+  overflow-x: hidden; }
 
 .tamLogo {
   width: 100px; }
@@ -143,18 +137,22 @@ body {
     color: #DDFFF7;
     opacity: .6; }
 
-.menuVertical {
-  background-color: #0D0106; }
-  .menuVertical .fuentesDos {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #DDFFF7; }
+.menuVertical .fuentesDos {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #DDFFF7; }
+  .menuVertical .fuentesDos:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: black; }
 
 .button-style {
   color: white; }
 
 /*footer*/
 #footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #DDFFF7; }
   #footer .box {
     display: flex;
@@ -164,7 +162,8 @@ body {
     align-items: center;
     margin: 10px; }
     #footer .box span {
-      display: inline-block; }
+      display: inline-block;
+      margin-bottom: 10px; }
     #footer .box a {
       width: 45px;
       height: 25px;
@@ -193,3 +192,139 @@ body {
   bottom: 10px; }
   .wsp img:hover {
     opacity: .7; }
+
+@media screen and (min-width: 600px) {
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 25px; }
+  header .boton {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    border: 2px white solid;
+    border-radius: 4px;
+    margin-bottom: 5px; }
+  #productos .caja {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; }
+    #productos .caja .botonComprar {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+  .collection-img img {
+    width: 500px; }
+  #footer {
+    background-color: #DDFFF7; }
+    #footer h2 {
+      color: #0D0106;
+      font-weight: bold; }
+    #footer p {
+      color: #0D0106; }
+  #ads {
+    background-image: url(../img/banner-bitcoin.jpg);
+    position: relative;
+    background-size: cover;
+    height: 35vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden; } }
+
+@media screen and (min-width: 800px) {
+  .header .caja {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 120px; }
+    .header .caja nav {
+      margin-top: 19px; }
+  #banner {
+    height: 100vh;
+    object-fit: cover; }
+  #footer {
+    background-color: #DDFFF7; }
+    #footer h2 {
+      color: #0D0106;
+      font-weight: bold; }
+    #footer p {
+      color: #0D0106; }
+  #ads {
+    background-image: url(../img/banner-bitcoin.jpg);
+    position: relative;
+    background-size: cover;
+    height: 35vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden; } }
+
+@media screen and (min-width: 900px) {
+  #productos .caja {
+    /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    height: 700px; }
+    #productos .caja .botonComprar {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+  #servicios .caja {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px; }
+  #footer {
+    width: 100%;
+    background-color: #DDFFF7; }
+    #footer h2, #footer p {
+      color: #0D0106;
+      font-weight: bold; }
+    #footer .caja {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      padding: 45px 0px; }
+  #ads {
+    background-image: url(../img/banner-bitcoin.jpg);
+    position: relative;
+    background-size: cover;
+    height: 35vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden; } }
+
+@media screen and (min-width: 1100px) {
+  #productos .caja {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 700px;
+    gap: 50px; }
+  #banner {
+    width: 100%; }
+    #banner h1 {
+      display: none; }
+      #banner h1 button {
+        margin-top: 400px; }
+  .tamañoImagenes img {
+    height: 90vh;
+    width: 100vh;
+    object-fit: contain; }
+  #ads {
+    background-image: url(../img/banner-bitcoin.jpg);
+    position: relative;
+    background-size: cover;
+    height: 35vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden; } }
