@@ -1,4 +1,41 @@
 @charset "UTF-8";
+/*body with header*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #DDFFF7; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #0D0106;
+  overflow-x: hidden; }
+
+.tamLogo {
+  width: 100px; }
+
+.fuentes {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #DDFFF7; }
+  .fuentes:hover {
+    color: #DDFFF7;
+    opacity: .6; }
+
+.menuVertical .fuentesDos {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #DDFFF7; }
+  .menuVertical .fuentesDos:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: black; }
+
+.button-style {
+  color: white; }
+
 .button {
   display: flex;
   flex-direction: row;
@@ -6,28 +43,6 @@
   align-items: center; }
 
 /*secciones*/
-#banner {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 90vh;
-  overflow: hidden;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  #banner:hover {
-    filter: grayscale(40%); }
-  #banner h1 {
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: sans-serif;
-    margin-bottom: 40px; }
-
 .collection-img {
   margin: 15px; }
   .collection-img span {
@@ -112,43 +127,6 @@
     font-weight: bold;
     background-color: #FFE900; }
 
-/*body with header*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: #DDFFF7; }
-
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #0D0106;
-  overflow-x: hidden; }
-
-.tamLogo {
-  width: 100px; }
-
-.fuentes {
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
-  color: #DDFFF7; }
-  .fuentes:hover {
-    color: #DDFFF7;
-    opacity: .6; }
-
-.menuVertical .fuentesDos {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #DDFFF7; }
-  .menuVertical .fuentesDos:hover {
-    text-decoration: underline;
-    color: white;
-    background-color: black; }
-
-.button-style {
-  color: white; }
-
 /*footer*/
 #footer {
   padding-top: 20px;
@@ -175,6 +153,13 @@ body {
       text-align: center; }
       #footer .box a:hover {
         transform: scale(1.05); }
+    #footer .box .nav-a {
+      color: white;
+      text-decoration: none;
+      width: auto;
+      background-color: none;
+      height: auto;
+      font-size: 20px; }
   #footer h2 {
     color: #0D0106;
     text-align: center;
@@ -310,29 +295,54 @@ body {
     overflow: hidden; } }
 
 @media screen and (min-width: 1100px) {
-  #productos .caja {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: 700px;
-    gap: 50px; }
   #banner {
-    width: 100%; }
-    #banner h1 {
-      display: none; }
-      #banner h1 button {
-        margin-top: 400px; }
-  body {
-    overflow-x: hidden; }
-  .tamañoImagenes img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 90vh;
-    width: 100vh;
-    object-fit: contain; }
-  #ads {
-    background-image: url(../img/banner-bitcoin.jpg);
-    position: relative;
-    background-size: cover;
-    height: 35vh;
+    overflow-x: hidden;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/probar.jpg");
     background-repeat: no-repeat;
-    width: 100%;
-    overflow: hidden; } }
+    background-size: cover;
+    background-position: center; }
+    #banner:hover {
+      filter: grayscale(40%); }
+    #banner h1 {
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin-top: 0px; } }
+
+#productos .caja {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 700px;
+  gap: 50px; }
+
+#banner {
+  width: 100%; }
+  #banner h1 {
+    display: none; }
+    #banner h1 button {
+      margin-top: 400px; }
+
+body {
+  overflow-x: hidden; }
+
+.tamañoImagenes img {
+  height: 90vh;
+  width: 100vh;
+  object-fit: contain; }
+
+#ads {
+  background-image: url(../img/banner-bitcoin.jpg);
+  position: relative;
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden; }
